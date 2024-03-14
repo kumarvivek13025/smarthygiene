@@ -1,0 +1,35 @@
+<%-include('../includes/sidebar.ejs') %>
+        <main>
+
+            <div class="page-header">
+                <h1>Add Device</h1>
+            </div>
+
+            <div class="page-content">
+                <nav class="topnav">
+                    <a class="<%=path==='/devices'?'active' : ' ' %>" href="/devices" active="">Devices</a>
+                    <a class="<%=path==='/devices/add-devices'?'active' : ' ' %>" href="/devices/add-devices">Add Devices</a> 
+                </nav>
+                <h1>Add a New Device</h1>
+                <form action="" method="post">
+                    <div>
+                        <label for="deviceid">Device</label>
+                        <input type="text" name="deviceName" id="deviceid">
+                    </div>
+                    <div>
+                        <label for="location">Location</label>
+                        <input type="text" name="location" id="location">
+                    </div>
+
+                    <button type="submit">Add Device</button>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+    
+
+</body>
+
+</html>
